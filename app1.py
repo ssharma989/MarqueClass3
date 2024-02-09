@@ -9,7 +9,7 @@ import streamlit as st
 import pandas as pd 
 import plotly.express as px 
 
-df = pd.read_csv('StockData/AAPL.csv', parse_dates=['Date'], index_col=['Date'])
+df = pd.read_csv('AAPL.csv', parse_dates=['Date'], index_col=['Date'])
 fig = px.line(df, y='Adj Close')
 st.title("DEMO APP - Schulich Class")
 st.write(df) #print 
